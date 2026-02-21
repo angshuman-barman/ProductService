@@ -11,4 +11,9 @@ public class productController {
     public String getMessage(@RequestBody @Valid Student student) {
         return "Hi, Hello from Product Service!";
     }
+
+    @GetMapping("/sendHi")
+    public String getMessage() {
+        return "Hi, Hello from Product Service!";
+    }
 }
