@@ -1,5 +1,6 @@
 package com.market.product;
 
+import com.market.product.model.Student;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

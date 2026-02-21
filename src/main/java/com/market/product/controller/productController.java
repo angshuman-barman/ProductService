@@ -1,16 +1,14 @@
 package com.market.product.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.market.product.model.Student;
+import jakarta.validation.Valid;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/getDetails")
 public class productController {
-    @GetMapping("/sendHi")
-    public String getMessage() {
+    @PostMapping("/sendHi")
+    public String getMessage(@RequestBody @Valid Student student) {
         return "Hi, Hello from Product Service!";
     }
-
-
 }
